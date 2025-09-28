@@ -79,7 +79,7 @@ map.on('click', (event) => {
         const lng = coords[0];
         const lat = coords[1];
         const centerParam = `${lat},${lng}`;
-        const googleKey = `${{ secrets.GOOGLE_API_KEY }}`;
+        const googleKey = `AIzaSyBQGQWanlRJblU8XNzT1cuN6I-ZnEta8QY`;
         const imgUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodeURIComponent(centerParam)}&zoom=16&size=240x240&maptype=satellite&key=${googleKey}`;
 
         new mapboxgl.Popup()
