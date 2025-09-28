@@ -1,0 +1,185 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    text-align: top;
+    font-family: 'inter', sans-serif;
+    font-size: 2.25em;
+    margin-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+h2 {
+    color: white;
+    text-align: left, top;
+    font-family: 'inter', sans-serif;
+    font-size: 1.5em;
+    margin-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+p {
+    color: white;
+    text-align: left, top;
+    font-family: 'inter', sans-serif;
+    font-size: 1em;
+    margin-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+br {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.floating-textbox1 {
+    backdrop-filter: blur(2px);
+    border-radius: 4px;
+    padding: 8px;
+    margin: 24px;
+    max-width: 400px;
+    text-align: left;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+}
+
+.floating-textbox {
+    backdrop-filter: blur(2px);
+    border-radius: 2px;
+    padding: 8px;
+    margin: 24px;
+    max-width: 400px;
+    text-align: left;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+.floating-textbox3 {
+    backdrop-filter: blur(2px);
+    border-radius: 2px;
+    padding: 8px;
+    margin: 24px;
+    max-width: 16px;
+    text-align: left;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+.datacenter-box {
+    backdrop-filter: blur(2px);
+    text-align: right;
+    border-radius: 2px;
+    margin: 24px;
+    padding: 8px;
+    max-width: 400px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.image-container-datacenter {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 0.75em;
+    margin: 16px;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+/* popup styling */
+
+.mapboxgl-popup-close-button {
+    color: rgb(255, 255, 255);
+
+}
+
+.mapboxgl-popup-content {
+    /* problem point, !important over writes default mapbox styles! */
+    background-color: rgba(255, 255, 255, 0.049) !important;
+    backdrop-filter: blur(2px) !important;
+    width: 240px;
+    height: contain;
+
+}
+
+.mapboxgl-popup-content h3 {
+    background: #91c949;
+    color: #8f1e1e;
+    margin: 0;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: 700;
+    margin-top: -15px;
+}
+
+.mapboxgl-popup-content p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: -8px;
+}
+
+.mapboxgl-popup-content div {
+    padding: 10px;
+    background-color: #8f1e1e !important;
+    ;
+
+}
+
+.mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+    border-bottom-color: #91c949;
+}
