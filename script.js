@@ -79,7 +79,7 @@ map.on('click', (event) => {
         const lng = coords[0];
         const lat = coords[1];
         const centerParam = `${lat},${lng}`;
-        const googleKey = `AIzaSyBQGQWanlRJblU8XNzT1cuN6I-ZnEta8QY`;
+        const googleKey = 'AIzaSyDaM8_dS5Xpp5tOstKqL2sYx10GwL5G26U';
         const imgUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodeURIComponent(centerParam)}&zoom=16&size=240x240&maptype=satellite&key=${googleKey}`;
 
         new mapboxgl.Popup()
@@ -98,11 +98,4 @@ map.on('click', (event) => {
 
 });
 
-const button = document.querySelector("#btn");
-const output = document.querySelector("#output");
 
-// Attach an event listener 
-button.addEventListener("click", function() { 
-	//run this code whenever the button with id 'btn' is clicked
-  output.innerHTML = "Hello! You clicked the button.";
-});
