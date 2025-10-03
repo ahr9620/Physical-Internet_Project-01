@@ -49,9 +49,22 @@ br {
     margin-bottom: 2px;
 }
 
+
+summary {
+    color: white;
+    text-align: left;
+    font-family: 'inter', sans-serif;
+    font-size: 1em;
+    margin-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
 .floating-textbox1 {
     backdrop-filter: blur(2px);
     border-radius: 4px;
+    background-color: rgb(255, 255, 255, 0.049);
     padding: 8px;
     margin: 24px;
     max-width: 400px;
@@ -66,6 +79,7 @@ br {
 .floating-textbox {
     backdrop-filter: blur(2px);
     border-radius: 2px;
+    background-color: rgb(255, 255, 255, 0.049);
     padding: 8px;
     margin: 24px;
     max-width: 400px;
@@ -80,6 +94,7 @@ br {
 .floating-textbox3 {
     backdrop-filter: blur(2px);
     border-radius: 2px;
+    background-color: rgb(255, 255, 255, 0.049);
     padding: 8px;
     margin: 24px;
     max-width: 16px;
@@ -95,6 +110,8 @@ br {
     backdrop-filter: blur(2px);
     text-align: right;
     border-radius: 2px;
+        background-color: rgb(255, 255, 255, 0.049);
+
     margin: 24px;
     padding: 8px;
     max-width: 400px;
